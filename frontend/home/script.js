@@ -7,14 +7,19 @@ async function loadCapas() {
         .then(data => {
             console.log(data)
             let capa = document.querySelectorAll('#capa');
-            let nome_livro = document.querySelectorAll('nome_livro')
             data.forEach((item, index) => {
                 //alert ('passou'+item+'index='+index);
                 capa[index].src = item.capa;
+                //capa[index].onclick = linkLivro(item.id);
                 
             })
         })
         
+}
+
+async function linkLivro(id)
+{
+    document.location = "../dadoslivro/index.html?id="+id;
 }
 
 async function loadDadosLivro(){
