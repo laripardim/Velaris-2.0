@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velaris Books</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 
@@ -40,24 +41,7 @@
         </div>
     </div>
     <!-- header -->
-    <header class="banner">
-
-        <div class="banner__contents">
-            <h1 class="banner__title"></h1>
-            <div class="banner__buttons">
-
-            </div>
-            <h1 class="banner__description">
-                
-            </h1>
-        </div>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <div class="banner--fadeBottom"></div>
-    </header>
+ 
 
     <div class="org">
         <div class="card" >
@@ -74,7 +58,51 @@
         </div>
     
     </div>
-    <button> Leia </button>
+    <div class="conteiner_comentario">
+        <div class="postar">
+            <div class="texto_comentario">deixe seu comentario aqui!</div>
+            <div class="editar">Editar</div>
+        </div>
+        <div class="estrelinha">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="textarea2"
+                    <textarea cols="30" aria-placeholder="descreva sua experiencia.."></textarea>
+                </div>  
+                <div class="btn">
+                    <button type="submit">Post</button>
+                </div>
+                <div class="com">
+                    <textarea name="text" id="um" cols="30" rows="10" class="te"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = ()=>{
+          widget.style.display = "none";
+          post.style.display = "block";
+          editBtn.onclick = ()=>{
+            widget.style.display = "block";
+            post.style.display = "none";
+          }
+          return false;
+        }
+      </script>
+    
+    <!-- <button> Leia </button>
         <div class="coments">
             <h2>Comentários</h2>
         </div>
@@ -84,7 +112,7 @@
         </div>
         <button>
             enviar
-        </button>
+        </button> -->
         
         <footer>
             <img src="../assets/insta.png" onclick="navegar()" alt="">
