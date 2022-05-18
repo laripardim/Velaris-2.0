@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -9,8 +16,162 @@ h2 {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #000;
 }
+
+.conteiner_comentario{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background: #000;
+    padding: 30px;
+    border: 1px solid #7b28acbe;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-width: 4px;
+    margin-top: 300px;
+}
+
+.te {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.022);
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+/* .post {
+    display: flex;
+} */
+
+.conteiner_comentario .post{
+    display: none;
+  }
+  .conteiner_comentario .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+  }
+  .conteiner_comentario .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .conteiner_comentario .edit:hover{
+    text-decoration: underline;
+  }
+  .conteiner_comentario .estrelinha input{
+    display: none;
+  }
+
+  .estrelinha label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+  }
+  input:checked ~ label{
+    color: #fd4;
+  }
+  input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+  }
+  #rate-1:checked ~ form header:before{
+    content: "não vou ler de novo ";
+  }
+  #rate-2:checked ~ form header:before{
+    content: "mais ou menos ";
+  }
+  #rate-3:checked ~ form header:before{
+    content: "gostei! ";
+  }
+
+  #rate-4:checked ~ form header:before{
+    content: "I just like it ";
+  }
+  #rate-5:checked ~ form header:before{
+    content: "Maravilhoso =)";
+  }
+  .container_comentario form{
+    display: none;
+  }
+
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .texto_comentario{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    /* background: rgb(255, 255, 255); */
+    /* color: #eee; */
+  }
+  form .texto_comentario textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+  }
+  .texto_comentario textarea:focus{
+    border-color: rgb(255, 252, 252);
+    background:  whitesmoke;
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover{
+    background: #1b1b1b;
+  }
+
+
 
 .pesquisar {
     width: 50%;
@@ -84,12 +245,12 @@ body {
 }
 
 .textarea{
-    width: 900px;
-    height: 150px;
+    width: 1000px;
+    height: 500px;
     border-radius: 5px;
     border:solid #7b28acbe;
-    background-color: rgba(0, 0, 0, 0);
-    outline: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;  
 
 }
 
@@ -176,9 +337,9 @@ button {
     color: var(--green);
     box-shadow: inset 0 0 10px rgba(186, 67, 255, 0.4), 0 0 9px 3px rgba(182, 33, 241, 0.1);
     border-width: 4px;
-    margin-left: 50%;
-    margin-right: 30%;
-    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 50%;
+    margin-top: 120%;
    }
    
    button:hover {
