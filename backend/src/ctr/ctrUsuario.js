@@ -22,15 +22,14 @@ const create = async(req, res) => {
 }
 
 const read = async(req, res) => {
-    let id = req.params.id;
+    const id = req.params.id;
 
     let filtro = {};
 
-    if(id != null) filtro = { where: { id:id } }
-    console.log(filtro)
+    if(id != undefined) filtro = { where: { id:id } }
     const ret = await Usuario.findAll(filtro);
-    // console.log(ret)
-    res.json(ret)
+
+    res.json(ret);
 
 }
 
@@ -68,27 +67,27 @@ const del = async(req, res) => {
 
 }
 
-const login = async(req, res) => {
-    const data = req.body;
+// const login = async(req, res) => {
+//     const data = req.body;
 
-    const ret = await Usuario.findAll({
-        attributes: {
-            exclude: ['senha']
-        },
-        where: { 
-            email: data.email, 
-            senha: data.senha, 
-        }
-    })
+//     const ret = await Usuario.findAll({
+//         attributes: {
+//             exclude: ['senha']
+//         },
+//         where: { 
+//             email: data.email, 
+//             senha: data.senha, 
+//         }
+//     })
 
-    res.json(ret).end();
-}
+//     res.json(ret).end();
+// }
 
 module.exports = {
     create,
     read,
     update,
-    del,
-    login
+    del
+    // login
 
 }
