@@ -15,24 +15,25 @@
                 <!-- <p class="description description-primary">Para se manter conectado conosco</p> -->
                 <!-- <p class="description description-primary">por favor faça login em sua conta.</p> -->
                 <!-- <button id="signin" class="btn btn-primary">Conectar</button> -->
-                <p class="description description-second">Use seu email para conectar-se:</p>
-                <form class="form">
+                <p class="description description-second"></p>
+                <div class="form">
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" id="email-login" placeholder="Email">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" id="senha-login" placeholder="Senha">
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-second">Entrar</button>
-                </form> 
+                    <button class="btn btn-second" id="login" onclick="login()">Entrar</button>
+                </div> 
                 
             </div>    
+            <!-- CRIAR CONTA (CADASTRAR) -->
             <div class="second-column">
                 <h2 class="title title-second">Criar conta</h2>
                 
@@ -52,9 +53,10 @@
                         <i class="fas fa-lock icon-modify"></i>
                         <input type="password" id="senha" placeholder="Senha">
                     </label>
-                    <button class="btn btn-tres" id="cadastro">Cadastrar</button>        
+                    <button class="btn btn-tres" id="signin" onclick="cadastro()">Cadastrar</button>        
                 </form>
             </div>
+            <!-- FIM DO CADASTRAR -->
         </div>
     </div>
     <script src="./script.js"></script>
