@@ -5,11 +5,12 @@ const route = express.Router();
 const ctrUsuario = require('./src/ctr/ctrUsuario');
 const ctrLivro = require('./src/ctr/ctrLivro');
 const ctrComentario = require('./src/ctr/ctrComentario');
+const ctrEscrita = require('./src/ctr/ctrEscrita.js');
 
-route.post('/login', ctrUsuario.login)
+// route.post('/login', ctrUsuario.login)
 
 route.post('/usuario', ctrUsuario.create);
-route.get('/usuarios', ctrUsuario.read);
+route.get('/usuario', ctrUsuario.read);
 route.get('/usuario/:id', ctrUsuario.read);
 route.put('/usuario/:id', ctrUsuario.update);
 route.delete('/usuario/:id', ctrUsuario.del);
@@ -28,5 +29,14 @@ route.put('/comentario/:id', ctrComentario.update);
 route.delete('/comentario/:id', ctrComentario.del);
 
 
+route.post('/escrita', ctrEscrita.create);
+route.get('/escrita', ctrEscrita.read);
+route.get('/escrita/:id', ctrEscrita.read);
+route.put('/escrita/:id', ctrEscrita.update);
+route.delete('/escrita/:id', ctrEscrita.del);
+
+
 module.exports = route;
+
+
 
