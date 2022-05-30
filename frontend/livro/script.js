@@ -1,83 +1,77 @@
-const modal = document.querySelector(".modal");
+//var btnSignin = document.querySelector("#signin");
+//var btnSignup = document.querySelector("#signup");
 
-var paramsBusca = new URLSearchParams(location.search);
+//var body = document.querySelector("body");
 
-async function loadCards() {
-    fetch("http://10.87.207.3:7000/livro/"+paramsBusca.get("id"))
-        .then(resp => {
-            return resp.json()
-        })
-        .then(data => {
-            console.log(data)
-            // alert(resp.json());
-            let card = document.querySelectorAll('.card');
-            let nome_livro = document.querySelectorAll('nome_livro')
-            data.forEach((item, index) => {
-                document.getElementById("card_img").src = item.capa;
-                nome_livro[index] = item.nome_livro;
-                let titulo = document.querySelector(".quadrado2").querySelectorAll("h2")
-                let genero = document.querySelector(".quadrado2").querySelectorAll("h4")
-                titulo[0].innerHTML = item.titulo
-                titulo[1].innerHTML = item.genero
-                genero[0].innerHTML = item.sinopse
-            })
-        })
-}
 
-function generateCards(data) {
+/*
+btnSignin.addEventListener("click", function () {
+    body.className = "sign-in-js"; 
+});
+*/
+/*
+btnSignup.addEventListener("click", function () {
+    body.className = "sign-up-js";
+})
+*/
+//document.querySelector("#signin").onclick = ()=>cadastro();
 
-    localStorage.setItem('ex1', JSON.stringify);
-    imgCard = JSON.parse(localStorage.getItem('userdata'));
 
-    livro.innerHTML = userdata;
-}
+async function cadastro(){
+    // fetch("http://localhost:7000/usuario",)
+    // .then(response=>{console.log(response)})
+    // .then(resp=>{})
 
-function init() {
-    loadCards();
-}
+     let body = {
+         nome: document.querySelector("#nome").value,
+         email:document.querySelector("#email").value,
+         senha:document.querySelector("#senha").value
+     }
 
-(init) ();
+     let settings = {
+         "method": "POST",
+         "headers": { 
+             "Content-Type": "application/json" 
+         },
+         "body": JSON.stringify(body)
+     }
 
-function showModal() {
-    showModal();
-    
-}
+    // let response = await fetch("http://localhost:7000/usuario", settings);
+    // let json = await response.json();
 
-// function load() {
-//     carregarDados();
-// }
-
-// function carregarDados() {
-
-// }
-// function initMap() {    
-    // map = new google.maps.Map(document.querySelector(".map"), {
-    //     center: { lat: -34.397, lng: 150.644 },
-    //     zoom: 18,
-    // });
-
-    // map.addListener("click", (data) => {
-    //     let coord = { lat: data.latLng.lat(), lng: data.latLng.lng() };
-
-        // //addMarker(coord, "Teste", "../assets/radar.png");
-        // meuAlerta = coord;
+    // console.log(json);
+    fetch(
+            "http://localhost:7000/usuario"
+          , settings
+      )
+      .then(response => {
         
-    //     showModal();
-    // });
-
-//     navigator.geolocation.getCurrentPosition((location) => {
-//         let coord = { lat: location.coords.latitude, lng: location.coords.longitude};
+        console.log(response);
+      })
+      .catch(err => {
         
-//         map.setCenter(coord);
+        console.error(err);
+      });
+      
+}
 
-//         addMarker(coord, "Minha Localizacao", "../assets/localiza.png");
-//     });
+
+// document.querySelector("#login").onclick = ()=>login();
+
+// function login(){
+//     let json=JSON.stringify({ 
+//         email:document.querySelector("#email-login").value,
+//         senha:document.querySelector("#senha-login").value,
+//     })
+//     console.log(json)
+//     fetch("http://localhost:7000/login",{
+//         headers: {
+//             'Accept': 'application/json',
+//             'Content-Type': 'application/json'
+//           },
+//           method: "POST",
+//           body: json
+//     })
+//     .then(Response=>{console.log(Response)})
+//     .then(resp=>{console.log(resp)})
 // }
-
-function showModal() {
-    modal.style.display = "flex";
-}
-
-function closeModal() {
-    modal.style.display = "none";
-}
