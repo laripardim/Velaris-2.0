@@ -1,0 +1,59 @@
+{
+	"titulo": "O senhor dos aneis - A sociedade do anel",
+	"capa": "https://images-na.ssl-images-amazon.com/images/I/81SWBRKfExL.jpg",
+	"qnts_caps": 18,
+	"nome_caps": "teste_back",
+	"genero": "Literatura Fantastica",
+	"sinopse":"Numa cidadezinha indolente do Condado, um jovem hobbit é encarregado de uma imensa tarefa. Deve empreender uma perigosa viagem através da Terra-média até as Fendas da Perdição, e lá destruir o Anel do Poder - a única coisa que impede o domínio maléfico do Senhor do Escuro.",
+	"id_usuario": 1
+}
+
+{
+	"titulo": "Harry Potter e o Calice de Fogo",
+	"capa": "",
+	"qnts_caps": ,
+	"nome_caps": "teste_back",
+	"genero": "Mundo Bruxo, Fantasia",
+	"sinopse":"",
+	"id_usuario": 1
+}
+
+{
+	"titulo": "Percy Jackson e o ladrão de raios",
+	"capa": "",
+	"qnts_caps": ,
+	"nome_caps": "teste_back",
+	"genero": "Mitologia Grega",
+	"sinopse":"",
+	"id_usuario": 1
+}
+
+{
+	"titulo": "Jogos Vorazes",
+	"capa": "https://m.media-amazon.com/images/I/412YcnhZs1L.jpg",
+	"qnts_caps": 18,
+	"nome_caps": "teste_back",
+	"genero": "Aventura, Ação",
+	"sinopse":"Quando Katniss Everdeen, de 16 anos, decide participar dos Jogos Vorazes para poupar a irmã mais nova, causando grande comoção no país, ela sabe que essa pode ser a sua sentença de morte. Mas a jovem usa toda a sua habilidade de caça e sobrevivência ao ar livre para se manter viva.",
+	"id_usuario": 1
+}
+
+{
+	"titulo": "Duna",
+	"capa": "https://images-na.ssl-images-amazon.com/images/I/81zN7udGRUL.jpg",
+	"qnts_caps": 10,
+	"nome_caps": "teste_back",
+	"genero": "Romance, Ficção Cientifica",
+	"sinopse":"O livro indica, numa leitura atenta, que o tempo de Paul Atreides está situado em cerca de 24.600 anos após o presente, no qual a Terra não é mais habitada e muito da sua história já foi esquecida, enquanto algumas tradições históricas e religiosas se mantêm. O conflito principal que dirige a narrativa de Duna é o duelo político entre três famílias nobres: a Casa Imperial Corrino e outras duas Grandes Casas, a Casa Atreides e a Casa Harkonnen. O Imperador Shaddam IV dos Corrino vê os Atreides como uma ameaça para o seu trono, devido ao carisma e popularidade do Duque Leto Atreides entre os demais nobres presentes na assembléia Landsraad, e devido ao duque e seus talentosos militares, Duncan Idaho, Gurney Halleck e o mentat Thufir Hawat. O Imperador decide que a Casa Atreides deve ser destruída. Entretanto, há uma convenção no Imperium (império multigalático em que ocorre a história) de que se o Imperador atacar uma Grande Casa, todas as outras Casas devem se unir para retaliar o imperador. Para contornar esse obstáculo, Shaddam faz uso de uma rivalidade milenar entre a Casa Atreides e a Casa Harkonnen como uma forma de encobrir seu ataque, chamando para isto o brilhante e ambicioso Barão Vladimir Harkonnen numa tentativa de eliminar seu rival.",
+	"id_usuario": 1
+}
+
+{
+	"titulo": "O Código Da Vinci",
+	"capa": "https://images-na.ssl-images-amazon.com/images/I/41U51ByfcwL._SX342_SY445_QL70_ML2_.jpg",
+	"qnts_caps": 9,
+	"nome_caps": "teste_back",
+	"genero": "Mistério, Romance",
+	"sinopse":"Um assassinato no museu do Louvre em Paris e pistas enigmáticas em alguns dos quadros mais famosos de Leonardo DaVinci levam à descoberta de um mistério religioso. Por mais de dois mil anos, uma sociedade secreta guarda informações que, se descobertas, poderiam comprometer o cristianismo. Robert Langdon, um professor especialista em simbologia e história, se envolve na investigação.",
+	"id_usuario": 1
+}
