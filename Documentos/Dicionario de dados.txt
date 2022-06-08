@@ -1,0 +1,38 @@
+USUARIO:
+
+[
+	{
+		"id": 8,
+		"nome": "Elian Moraes",
+		"email": "elian_Omoraes@gmail.com",
+		"senha": "505022",
+		"foto": "https://pps.whatsapp.net/v/t61.24694-24/154653796_2713591758771182_3615043317830060434_n.jpg?ccb=11-4&oh=01_AVzAA_pCbVkdtp7DwYxEcNCIkXeZ1P4tRjT7-uSCtDyKMA&oe=62AFCE9A"
+	}
+]
+
+
+LIVRO: 
+
+[
+	{
+		"id": 6,
+		"titulo": "A garota do lago",
+		"capa": "https://images-na.ssl-images-amazon.com/images/I/81LRk6+p1HL.jpg",
+		"nome_caps": "teste_back",
+		"qnts_caps": "50",
+		"genero": "investigação, terror",
+		"sinopse": "Descrição. Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas à beira de um longo trecho de água intocada. Duas semanas atrás, a estudante de direito Becca Eckersley foi brutalmente assassinada em uma dessas casas."
+	}
+]
+
+
+COMENTÁRIOS: 
+
+[
+        {
+		"id": 1,
+		"comentario": "achei chato",
+		"id_usuario": 4,
+		"id_livro": 1
+	}
+]	
